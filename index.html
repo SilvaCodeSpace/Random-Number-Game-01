@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="four">
+        <h1><span>ADIVINA EL</span> NUMERO</h1>
+      </div>
+      <div class="instruct">
+        <p>escribe un numero entre 1 y 100</p>
+        <p>solo tienes <span class="attempts"></span> intentos</p>
+      </div>
+
+      <form action="">
+        <input type="number" id="guessField" class="guessField" />
+        <input type="submit" value="Submit" class="guessSubmit" />
+      </form>
+      <br />
+
+      <div class="resultParas">
+        <div class="guesses"></div>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+
+      <div id="congrats-confetti"></div>
+
+      <script src="mechanism.js"></script>
+    </section>
+    <section class="gameoverpage" id="gameoverpage">
+      <div id="gameoverdiv"></div>
+    </section>
+  </body>
+</html>

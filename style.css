@@ -1,0 +1,242 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  height: max-content;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  color: #222;
+  border-radius: 5%;
+  border: 1px solid #222;
+}
+
+#congrats-confetti {
+  background: url(assets/confetti.gif);
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  display: none;
+}
+
+.instruct {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, cursive;
+  color: #222;
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+input[type="number"] {
+  padding: 0.5em;
+  border: 1px solid #222;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  margin: 1em 0em;
+  font-size: 20px;
+  text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="submit"],
+button {
+  padding: 1em 5em;
+  border: 1px solid white;
+  border-radius: 60px;
+  background-color: #222;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #f4f4f4;
+  color: #222;
+  border-color: #222;
+  transition: all 0.3s ease;
+}
+
+button {
+  padding: 8px 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.guesses,
+.lastResult,
+.lowOrHi {
+  color: #222;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.lastResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+}
+
+button {
+  position: relative;
+  z-index: 2;
+}
+
+.lowOrHi {
+  font-size: 14px;
+}
+
+#gameoverdiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .slantedDiv div {
+    font-size: 28px;
+    text-align: justify;
+    margin: 0em 0.8em;
+  }
+
+  .instruct {
+    padding: 0em 3em;
+  }
+  .lastResult {
+    width: 70vw;
+  }
+  #gameoverdiv > button {
+    width: 70% !important;
+  }
+}
+
+.resultParas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameoverpage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.four h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  margin-top: 30px;
+  padding-top: 0;
+}
+.four h1 span {
+  font-weight: 300;
+  word-spacing: 3px;
+}
+
+.four h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+}
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.guesses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  color: #080808;
+  font-size: 14px;
+}
+
+.guesses p {
+  border-color: #e746468a;
+  border-radius: 30px;
+  background-color: #e746468a;
+  padding: 4px;
+  margin: 0 10px;
+  color: #080808;
+  font-family: "Raleway", sans-serif;
+  height: auto;
+  width: auto;
+}
